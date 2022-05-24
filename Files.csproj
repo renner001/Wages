@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8376D1BE-E646-4B42-B51B-12647AC7E36A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Files</RootNamespace>
+    <AssemblyName>Files</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.3\Defs\ThinkTreeDef\ThinkTreeDefs_Wages.xml" />
+    <Content Include="1.3\Defs\RecipeDef\RecipeDefs_RennOrganisms.xml" />
+    <Content Include="1.3\Defs\ReseachProjectDef\ResearchProjectDefs_Repeatable.xml" />
+    <Content Include="1.3\Defs\ReseachProjectDef\ResearchTabDefs_Repeatable.xml" />
+    <Content Include="1.3\Defs\ThingDef\ThingDefs_RennOrganisms.xml" />
+    <Content Include="1.3\Defs\ThoughtDef\ThoughtDefs_RepeatableResearch.xml" />
+    <Content Include="1.3\Patches\Patches_Buildings.xml" />
+    <Content Include="1.3\Patches\Patches_Stats.xml" />
+    <Content Include="Languages\English\Keyed\keys.xml" />
+    <Content Include="Languages\German\DefInjected\ResearchProjectDef\ResearchProjectDefs_Repeatable.xml" />
+    <Content Include="Languages\German\DefInjected\ResearchProjectDef\ResearchTabDefs_Repeatable.xml" />
+    <Content Include="Languages\German\DefInjected\ThoughtDef\ThoughtDefs_RepeatableResearch.xml" />
+    <Content Include="Languages\German\Keyed\keys.xml" />
+    <Content Include="Languages\German\LanguageInfo.xml" />
+    <Content Include="About\About.xml" />
+    <Content Include="About\Preview.png" />
+    <Content Include="Steam\Images\AddLetterDropdown.png" />
+    <Content Include="Steam\Images\AddLetterDropdown_Focus.png" />
+    <Content Include="Steam\Images\AddLetterNewPart.png" />
+    <Content Include="Steam\Images\AddLetterNewPart2.png" />
+    <Content Include="Steam\Images\AddLetterNewPart2_Focus.png" />
+    <Content Include="Steam\Images\LetterReceived.png" />
+    <Content Include="Steam\Images\LetterReceivedOpen.png" />
+    <Content Include="Steam\Images\LetterReceivedOpen_Focus.png" />
+    <Content Include="Steam\Images\LetterReceived_Focus.png" />
+    <Content Include="Steam\Logo\Logo.png" />
+    <Content Include="Steam\Logo\Logo_Base.png" />
+    <Content Include="Textures\Building_RennPond\RennPond.png" />
+    <Content Include="Textures\Building_RennPortal\RennPortal.png" />
+    <Content Include="Textures\Building_RennReactor\RennReactor.png" />
+    <Content Include="Textures\Plant_RennFiberDomestic\RennFiberDomestic\Plant_RennFiberDomestic_A.png" />
+    <Content Include="Textures\Plant_RennFiberDomestic\RennFiberDomestic_Immature\Plant_RennFiberDomestic_A.png" />
+    <Content Include="Textures\Plant_RennFiberEngineered\Plant_RennFiberEngineered_Immature\Plant_RennFiberEngineered_A.png" />
+    <Content Include="Textures\Plant_RennFiberEngineered\RennFiberEngineered\Plant_RennFiberEngineered_A.png" />
+    <Content Include="Textures\Plant_RennFiber\RennFiber\Plant_RennFiber_A.png" />
+    <Content Include="Textures\Plant_RennFiber\RennFiber_Immature\Plant_RennFiber_A.png" />
+    <Content Include="Textures\RennFiberDomestic\RennFiberDomestic.png" />
+    <Content Include="Textures\RennFiberEngineered\RennFiberEngineered.png" />
+    <Content Include="Textures\RennFiber\RennFiber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1.3\Assemblies\" />
+    <Folder Include="1.3\Defs\Stats\" />
+    <Folder Include="1.3\Defs\WorkGiverDef\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="Steam\Logo\Logo.pdn" />
+    <None Include="Textures\Building_RennPond\RennPond.pdn" />
+    <None Include="Textures\Plant_RennFiberDomestic\RennFiberDomestic\Plant_RennFiberDomestic_A.pdn" />
+    <None Include="Textures\Plant_RennFiberDomestic\RennFiberDomestic_Immature\Plant_RennFiberDomestic_A.pdn" />
+    <None Include="Textures\Plant_RennFiberEngineered\Plant_RennFiberEngineered_Immature\Plant_RennFiberEngineered_A.pdn" />
+    <None Include="Textures\Plant_RennFiberEngineered\RennFiberEngineered\Plant_RennFiberEngineered_A.pdn" />
+    <None Include="Textures\Plant_RennFiber\RennFiber\Plant_RennFiber_A.pdn" />
+    <None Include="Textures\Plant_RennFiber\RennFiber_Immature\Plant_RennFiber_A.pdn" />
+    <None Include="Textures\RennFiberDomestic\RennFiberDomestic.pdn" />
+    <None Include="Textures\RennFiberEngineered\RennFiberEngineered.pdn" />
+    <None Include="Textures\RennFiber\RennFiber.pdn" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

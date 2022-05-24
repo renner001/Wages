@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <MoodBoostSmall.stages.small_heureka.label>Heureka</MoodBoostSmall.stages.small_heureka.label>
+  <MoodBoostSmall.stages.heureka.label>Heureka</MoodBoostSmall.stages.heureka.label>
+  <MoodBoostSmall.stages.true_heureka.label>Heureka</MoodBoostSmall.stages.true_heureka.label>
+  <Heureka.stages.heurekaLow.description>Wir haben etwas gelernt - das ist schön.</Heureka.stages.heurekaLow.description>
+  <Heureka.stages.heurekaMedium.description>Wir haben unser Wissen über das Universum erweitert.</Heureka.stages.heurekaMedium.description>
+  <Heureka.stages.heurekaHigh.description>Wir haben unser Wissen über das Universum erweitert. Ich fühle mich in meine Schranken gewiesen durch meine eigene Bedeutungslosigkeit!</Heureka.stages.heurekaHigh.description>
+</LanguageData>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>RepeatableMoodSmall</defName>
+    <label>Small Mood Boost (repeatable)</label>
+    <description>Broaden your understanding of human nature and applied mood manipulation. 
+
+Will trigger a small Heureka! moment for your colony increasing the colonists mood by 3.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatableMoodSmall</def>
+      </li>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_MoodBoost">
+        <def>RepeatableMoodSmall</def>
+        <stage>0</stage>
+        <heurekaChance>100</heurekaChance>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatableMoodMedium</defName>
+    <label>Medium Mood Boost (repeatable)</label>
+    <description>Broaden your understanding of human nature and applied mood manipulation.
+
+Will trigger a medium Heureka! moment for your colony increasing the colonists mood by 6.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatableMoodMedium</def>
+      </li>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_MoodBoost">
+        <def>RepeatableMoodMedium</def>
+        <stage>1</stage>
+        <heurekaChance>100</heurekaChance>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatableMoodLarge</defName>
+    <label>Large Mood Boost (repeatable)</label>
+    <description>Broaden your understanding of human nature and applied mood manipulation.
+
+Will trigger a large Heureka! moment for your colony increasing the colonists mood by 9.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatableMoodLarge</def>
+      </li>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_MoodBoost">
+        <def>RepeatableMoodLarge</def>
+        <stage>2</stage>
+        <heurekaChance>100</heurekaChance>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentGlobalWorkSpeed</defName>
+    <label>Global Work Speed Boost (repeatable)</label>
+    <description>Raise awareness for daily morning routines based on Space-Yoga. This will improve mobility across all your colonists.
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentGlobalWorkSpeed</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentMiningYield</defName>
+    <label>Mining Yield Boost (repeatable)</label>
+    <description>Lower waste while mining for ore with the benefit of increasing the yield everytime you mine a resource.
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentMiningYield</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentMedicalTendQuality</defName>
+    <label>Tend Quality Boost (repeatable)</label>
+    <description>Always wash your hand before tending to the sick - never forget!
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentMedicalTendQuality</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentPlantYield</defName>
+    <label>Plant Yield Boost (repeatable)</label>
+    <description>Try not to step on plants - ever.
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentPlantYield</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentButcheryYield</defName>
+    <label>Butchery Yield Boost (repeatable)</label>
+    <description>You can eat that, don't throw it away!
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentButcheryYield</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+</Defs>

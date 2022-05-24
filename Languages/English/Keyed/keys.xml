@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <RepeatableResearch.timesAlreadyResearched>already {0} times researched</RepeatableResearch.timesAlreadyResearched>
+  <RepeatableResearch.statBonusExplanation>Multiplier for {0} x{1}: x{2}%
+</RepeatableResearch.statBonusExplanation>
+  <RepeatableResearch.SettingsPanel>Repeatable research</RepeatableResearch.SettingsPanel>
+  <RepeatableResearch.EnableResearchGlobalWorkSpeed>Enable Research on Global Workspeed Boost</RepeatableResearch.EnableResearchGlobalWorkSpeed>
+  <RepeatableResearch.EnableResearchGlobalWorkSpeedTooltip>If ticked, will make the repeatable research available to increase the gobal work speed.</RepeatableResearch.EnableResearchGlobalWorkSpeedTooltip>
+  <RepeatableResearch.SettingsPanelChangeSettingsEffect>Enabling or disabling research options will require you to restart the game. 
+If you disable an already researched technology, then ignore the errors while loading the savegame up for the first time.</RepeatableResearch.SettingsPanelChangeSettingsEffect>
+  
+
+</LanguageData>

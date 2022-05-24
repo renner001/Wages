@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>MoodBoost</defName>
+    <!--<workerClass>DanielRenner.RepeatableResearch.ThoughtWorker_MoodBoost</workerClass>  not required, as we set the right stage directly when creating the thought -->
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <!--<nullifyingPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
+    </nullifyingPrecepts>-->
+    <stages>
+      <li>
+        <label>small Heureka</label>
+        <description>We learnt something - that is swell.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>heureka</label>
+        <description>We expanded our knowledge of the universe.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>true Heureka</label>
+        <description>We expanded our knowledge of the universe. I feel humbled by my own insignificance!</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

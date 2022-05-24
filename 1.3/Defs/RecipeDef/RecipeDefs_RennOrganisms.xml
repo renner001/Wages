@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Make_RennPowder -->
+  <RecipeDef>
+    <defName>Make_RennPowder</defName>
+    <label>make powder from domestic renn fiber</label>
+    <description>Make renn powder from domestic renn fibers.</description>
+    <jobString>Pulverizing renn powder.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RennFiberDomestic</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RennFiberDomestic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <RennPowder>10</RennPowder>
+    </products>
+  </RecipeDef>
+  <!-- Make_RennConcentrate -->
+  <RecipeDef>
+    <defName>Make_RennConcentrate</defName>
+    <label>make concentrate from engineered renn fiber</label>
+    <description>Make renn concentrate from engineered renn fibers.</description>
+    <jobString>Making renn concentrate.</jobString>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RennFiberEngineered</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RennFiberEngineered</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <RennConcentrate>10</RennConcentrate>
+    </products>
+  </RecipeDef>
+  <!-- Make_RennCapsule -->
+  <RecipeDef>
+    <defName>Make_RennCapsule</defName>
+    <label>make renn capsule</label>
+    <description>Make a renn capsule.</description>
+    <jobString>Making renn capsule.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedRennCapsule</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RennConcentrate</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+        <li>Steel</li>
+        <li>RennConcentrate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <RennCapsule>1</RennCapsule>
+    </products>
+    <!--<researchPrerequisite>AdvancedFabrication</researchPrerequisite>-->
+    <skillRequirements>
+      <Crafting>16</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>
