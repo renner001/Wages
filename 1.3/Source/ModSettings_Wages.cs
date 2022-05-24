@@ -11,7 +11,11 @@ namespace DanielRenner.Wages
 {
     class ModSettings_Wages : ModSettings
     {
-        public static int wagesMultipilerSettingsPercent = 100;
+        public static int maxWage = 200;
+        public static int minWage = 0;
+        public static int zeroPointWage = 10;
+        public static int owedWageIgnoredBeforeGathering = 50;
+        public static int owedWageIgnoredBeforeMoodlet = 500;
 
         public static void DoSettingsWindowContents(Rect rect)
         {
@@ -27,7 +31,19 @@ namespace DanielRenner.Wages
 
             listMain.Begin(mainRect);
             //listMain.CheckboxLabeled(Translations_RennOrganisms.EnableResearchGlobalWorkSpeed, ref ModSettings_RennOrganisms.enabledResearchGlobalWorkSpeed, Translations_RennOrganisms.EnableResearchGlobalWorkSpeedTooltip);
-            LabeledScrollbar(listMain, "Adapt Mood Effects (%)", ref ModSettings_Wages.wagesMultipilerSettingsPercent, "Change the mood effects that this mod applies to your colonists. 50% would mean, that a normally applied mood effect of -10 mood would turn into a -5 mood effect.");
+            LabeledScrollbar(listMain, "Minimum Wage (in silver every 5 days)", 0, maxWage, 10, "silver", ref minWage, "The smallest wage that can be paid to a pawn. This wage will result in the highest mood penalty, if it is below the Zero Mood Point.");
+            LabeledScrollbar(listMain, "Maximum Wage (in silver every 5 days)", minWage, 1000, 10, "silver", ref maxWage, "The highest wage that can be paid to a pawn. This wage will result in the highest mood boost.");
+            if (zeroPointWage > maxWage)
+            {
+                zeroPointWage = maxWage;
+            }
+            if (zeroPointWage < minWage)
+            {
+                zeroPointWage = minWage;
+            }
+            LabeledScrollbar(listMain, "Zero Mood Point (in silver every 5 days)", minWage, maxWage, 10, "silver", ref zeroPointWage, "The wage at which no mood boost or penalty is applied. Paying this wage will cause no mood effect. Going above will increase the mood. Going below will reduce the mood.");
+            LabeledScrollbar(listMain, "Colonists start collecting wages at x silver owed", 0, 2000, 20, "silver", ref owedWageIgnoredBeforeGathering, "Colonists will not collect wages immediately to avoid running for a single silver. Only if they are owed more than this threshold will they start collecting.");
+            LabeledScrollbar(listMain, "Colonists feel cheated starting at x silver owed", 0, 4000, 40, "silver", ref owedWageIgnoredBeforeMoodlet, "If colonists try to collect their wages and can't despite already being owed this amount will they feel cheated applying a mood penalty until they are paid.");
             listMain.End();
 
             //Rect fullWidthSettingsRect = mainRect.TopPartPixels()
@@ -50,7 +66,11 @@ namespace DanielRenner.Wages
             base.ExposeData();
 
             // all scribes...
-            Scribe_Values.Look(ref wagesMultipilerSettingsPercent, "moodMultipilerSettingsPercent", 100);
+            Scribe_Values.Look(ref maxWage, "maxWage", 200);
+            Scribe_Values.Look(ref minWage, "minWage", 0);
+            Scribe_Values.Look(ref zeroPointWage, "zeroPointWage", 10);
+            Scribe_Values.Look(ref owedWageIgnoredBeforeGathering, "owedWageIgnoredBeforeGathering", 50);
+            Scribe_Values.Look(ref owedWageIgnoredBeforeMoodlet, "owedWageIgnoredBeforeMoodlet", 500);
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
@@ -59,15 +79,15 @@ namespace DanielRenner.Wages
 
         }
 
-        public static void LabeledScrollbar(Listing_Standard listing_Standard, string label, ref int setting, string tooltip = null)
+        public static void LabeledScrollbar(Listing_Standard listing_Standard, string label, int min, int max, int steps, string unit, ref int setting, string tooltip = null)
         {
             Rect rect = listing_Standard.GetRect(Text.LineHeight).Rounded();
             Rect SliderOffset = rect.RightHalf().Rounded().RightPartPixels(400);
-            Widgets.Label(rect, label + ": " + setting + "%");
+            Widgets.Label(rect, label + ": " + setting + " " + unit);
             var settingUnrounded = Widgets.HorizontalSlider(
             SliderOffset,
-            setting, 0f, 200f, true);
-            setting = (int)(Math.Round(settingUnrounded / (double)5, 0) * 5);
+            setting, min, max, true);
+            setting = (int)(Math.Round(settingUnrounded / (double)steps, 0) * steps);
             if (!tooltip.NullOrEmpty())
             {
                 if (Mouse.IsOver(rect))

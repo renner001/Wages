@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MainButtonDef>
+    <defName>MainTabWages</defName>
+    <label>wages</label>
+    <description>Manage the wages for your colonists.</description>
+    <tabWindowClass>DanielRenner.Wages.MainTabWindow_Wages</tabWindowClass>
+    <order>80</order>
+    <!--<defaultHotKey>F9</defaultHotKey>-->
+    <validWithoutMap>true</validWithoutMap>
+    <minimized>True</minimized>
+    <!--<iconPath>UI/Buttons/MainButtons/History</iconPath>-->
+  </MainButtonDef>
+</Defs>

@@ -11,7 +11,13 @@ namespace DanielRenner.Wages
     [DefOf]
     public static class DefOfs_Wages
     {
-        //public static ddd RennPond;
+        public static RecordDef TotalWagesOwed;
+        public static RecordDef TotalWagesCollected;
+        public static RecordDef CurrentWage;
+        public static JobDef CollectWages;
+
+        public static ThoughtDef WageLevelEffect;
+        public static ThoughtDef NotGettingPaid;
 
     }
 }
