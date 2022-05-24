@@ -17,6 +17,7 @@ namespace DanielRenner.Wages
 
         public virtual JobDef JobStandard => JobDefOf.Refuel;
 
+        /*
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             if (CanRefuelThing(t))
@@ -30,5 +31,7 @@ namespace DanielRenner.Wages
         {
             return RefuelWorkGiverUtility.RefuelJob(pawn, t, forced, JobStandard, JobAtomic);
         }
+
+        */
     }
 }

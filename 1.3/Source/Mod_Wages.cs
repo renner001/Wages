@@ -24,42 +24,27 @@ namespace DanielRenner.Wages
 
         public Mod_Wages(ModContentPack mcp) : base(mcp)
         {
-            LongEventHandler.ExecuteWhenFinished(() => { 
-				base.GetSettings<ModSettings_RepeatableResearch>(); 
-			});
+            LongEventHandler.ExecuteWhenFinished(() => {
+                base.GetSettings<ModSettings_Wages>();
+            });
         }
 
-		public override void WriteSettings()
-		{
-			base.WriteSettings();
-		}
+        public override void WriteSettings()
+        {
+            base.WriteSettings();
+        }
 
 
-		public override string SettingsCategory()
-		{
-			return Translations_RepeatableResearch.SettingsPanelName;
-		}
+        public override string SettingsCategory()
+        {
+            return Translations_Wages.Static.SettingsPanelName;
+        }
 
 
-		public override void DoSettingsWindowContents(Rect rect)
-		{
-
-			Rect descriptionRect = rect.TopPartPixels(Text.CalcHeight(Translations_RepeatableResearch.SettingsPanelChangeSettingsEffect, rect.width));
-			Rect mainRect = rect.BottomPartPixels(rect.height - descriptionRect.height - 50);
-			Widgets.Label(descriptionRect, Translations_RepeatableResearch.SettingsPanelChangeSettingsEffect);
-
-
-			Rect leftRect = mainRect.LeftHalf().Rounded();
-			Rect rightRect = mainRect.RightHalf().Rounded();
-
-			Listing_Standard listLeft = new Listing_Standard()
-			{
-				ColumnWidth = leftRect.width,
-			};
-
-			listLeft.Begin(leftRect);
-			listLeft.CheckboxLabeled(Translations_RepeatableResearch.EnableResearchGlobalWorkSpeed, ref ModSettings_RepeatableResearch.enabledResearchGlobalWorkSpeed, Translations_RepeatableResearch.EnableResearchGlobalWorkSpeedTooltip);
-			listLeft.End();
-		}
-	}
+        public override void DoSettingsWindowContents(Rect rect)
+        {
+            // we will put the rendering code into the settings class - where it belongs...
+            ModSettings_Wages.DoSettingsWindowContents(rect);
+        }
+    }
 }

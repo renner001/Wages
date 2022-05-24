@@ -1,15 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-  <RepeatableMoodSmall.label>Grundlagen erforschen klein (wiederholbar)</RepeatableMoodSmall.label>
-  <RepeatableMoodSmall.description>Erweitert unser Verständnis von Natur und Physik.
-
-Könnte bei Abschluss einen kleinen Heureka!-Moment auslösen.</RepeatableMoodSmall.description>
-  <RepeatableMoodMedium.label>Grundlagen erforschen (wiederholbar)</RepeatableMoodMedium.label>
-    <RepeatableMoodMedium.description>Erweitert unser Verständnis von Natur und Physik.
-
-Könnte bei Abschluss einen Heureka!-Moment auslösen.</RepeatableMoodMedium.description>
-  <RepeatableMoodLarge.label>Grundlagen erforschen groß (wiederholbar)</RepeatableMoodLarge.label>
-  <RepeatableMoodLarge.description>Erweitert unser Verständnis von Natur und Physik.
-
-Könnte bei Abschluss einen großen Heureka!-Moment auslösen.</RepeatableMoodLarge.description>
+  <!--<RepeatableMoodSmall.label>Grundlagen erforschen klein (wiederholbar)</RepeatableMoodSmall.label>-->
 </LanguageData>
