@@ -44,14 +44,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1.5\Source\DefOfs_Wages.cs" />
+    <Compile Include="1.5\Source\GameComponent_WageDirector.cs" />
+    <Compile Include="1.5\Source\JobDriver_CollectWages.cs" />
+    <Compile Include="1.5\Source\JobGiver_CollectWages.cs" />
+    <Compile Include="1.5\Source\Log.cs" />
+    <Compile Include="1.5\Source\MainTabWindow_Wages.cs" />
+    <Compile Include="1.5\Source\ModSettings_Wages.cs" />
+    <Compile Include="1.5\Source\Mod_Wages.cs" />
+    <Compile Include="1.5\Source\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="1.5\Source\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="1.5\Source\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="1.5\Source\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="1.5\Source\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="1.5\Source\PayHelperUtility.cs" />
+    <Compile Include="1.5\Source\Properties\AssemblyInfo.cs" />
+    <Compile Include="1.5\Source\Textures_Wages.cs" />
+    <Compile Include="1.5\Source\Translations_Wages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1.3\Defs\JobDef\JobDefs_Wages.xml" />
-    <Content Include="1.3\Defs\MainTabDef\MainTabDefs_Wages.xml" />
-    <Content Include="1.3\Defs\RecordDef\RecordDefs_Wages.xml" />
-    <Content Include="1.3\Defs\ThinkTreeDef\ThinkTreeDefs_Wages.xml" />
-    <Content Include="1.3\Defs\ThoughtDef\ThoughtDefs_Wages.xml" />
+    <Content Include="1.5\Assemblies\Wages.dll" />
+    <Content Include="1.5\Defs\JobDef\JobDefs_Wages.xml" />
+    <Content Include="1.5\Defs\MainTabDef\MainTabDefs_Wages.xml" />
+    <Content Include="1.5\Defs\RecordDef\RecordDefs_Wages.xml" />
+    <Content Include="1.5\Defs\ThinkTreeDef\ThinkTreeDefs_Wages.xml" />
+    <Content Include="1.5\Defs\ThoughtDef\ThoughtDefs_Wages.xml" />
+    <Content Include="1.5\Source\obj\Debug\DanielRenner.Cravings.csproj.FileListAbsolute.txt" />
+    <Content Include="1.5\Source\obj\Debug\DanielRenner.Cravings.dll" />
+    <Content Include="1.5\Source\obj\Debug\RepeatableResearch.csproj.FileListAbsolute.txt" />
+    <Content Include="1.5\Source\obj\Debug\RepeatableResearch.dll" />
+    <Content Include="1.5\Source\obj\Debug\Scenario Letters.csproj.FileListAbsolute.txt" />
+    <Content Include="1.5\Source\obj\Debug\ScenarioLetters.csproj.FileListAbsolute.txt" />
+    <Content Include="1.5\Source\obj\Debug\ScenarioLetters.dll" />
+    <Content Include="1.5\Source\obj\Debug\Wages.csproj.FileListAbsolute.txt" />
+    <Content Include="1.5\Source\obj\Debug\Wages.dll" />
+    <Content Include="1.5\Source\obj\Release\ScenarioLetters.csproj.FileListAbsolute.txt" />
+    <Content Include="1.5\Source\obj\Release\ScenarioLetters.dll" />
+    <Content Include="1.5\Source\Wages.csproj.user" />
+    <Content Include="1.5\Source\Wages.sln" />
     <Content Include="Languages\English\Keyed\keys.xml" />
     <Content Include="Languages\German\DefInjected\ResearchProjectDef\ResearchProjectDefs_Repeatable.xml" />
     <Content Include="Languages\German\Keyed\keys.xml" />
@@ -69,23 +100,47 @@
     <Content Include="Steam\Images\LetterReceived_Focus.png" />
     <Content Include="Steam\Logo\Logo.png" />
     <Content Include="Steam\Logo\Logo_Base.png" />
+    <Content Include="Textures\MoodIcon.png" />
+    <Content Include="Textures\WagesMenuIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="1.3\Assemblies\" />
-    <Folder Include="1.3\Defs\RecipeDef\" />
-    <Folder Include="1.3\Defs\ReseachProjectDef\" />
-    <Folder Include="1.3\Defs\Stats\" />
-    <Folder Include="1.3\Defs\ThingDef\" />
-    <Folder Include="1.3\Defs\WorkGiverDef\" />
-    <Folder Include="1.3\Patches\" />
+    <Folder Include="1.5\Defs\RecipeDef\" />
+    <Folder Include="1.5\Defs\ReseachProjectDef\" />
+    <Folder Include="1.5\Defs\Stats\" />
+    <Folder Include="1.5\Defs\ThingDef\" />
+    <Folder Include="1.5\Defs\WorkGiverDef\" />
+    <Folder Include="1.5\Patches\" />
+    <Folder Include="1.5\Source\bin\Debug\" />
+    <Folder Include="1.5\Source\bin\Release\" />
+    <Folder Include="1.5\Source\obj\Debug\TempPE\" />
+    <Folder Include="1.5\Source\obj\Release\TempPE\" />
     <Folder Include="Languages\German\DefInjected\ThoughtDef\" />
-    <Folder Include="Textures\" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="1.5\Source\obj\Debug\DanielRenner.Cravings.csproj.AssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Debug\DanielRenner.Cravings.csproj.CoreCompileInputs.cache" />
+    <None Include="1.5\Source\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="1.5\Source\obj\Debug\RepeatableResearch.csproj.AssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Debug\RepeatableResearch.csproj.CoreCompileInputs.cache" />
+    <None Include="1.5\Source\obj\Debug\RepeatableResearch.csprojAssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Debug\Scenario Letters.csproj.AssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Debug\Scenario Letters.csproj.CoreCompileInputs.cache" />
+    <None Include="1.5\Source\obj\Debug\ScenarioLetters.csproj.AssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Debug\ScenarioLetters.csproj.CoreCompileInputs.cache" />
+    <None Include="1.5\Source\obj\Debug\Wages.csproj.AssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Debug\Wages.csproj.CoreCompileInputs.cache" />
+    <None Include="1.5\Source\obj\Debug\Wages.csprojAssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="1.5\Source\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="1.5\Source\obj\Release\ScenarioLetters.csproj.AssemblyReference.cache" />
+    <None Include="1.5\Source\obj\Release\ScenarioLetters.csproj.CoreCompileInputs.cache" />
+    <None Include="1.5\Source\Wages.csproj" />
     <None Include="LICENSE" />
     <None Include="README.md" />
     <None Include="Steam\Logo\Logo.pdn" />
+    <None Include="Textures\MenuIcon.pdn" />
+    <None Include="Textures\MoodIcon.pdn" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

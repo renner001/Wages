@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecordDef>
+    <defName>CurrentWage</defName>
+    <label>Current Wage</label>
+    <description>The amount of silver I am owed every week.</description>
+    <type>Int</type>
+  </RecordDef>
+  <RecordDef>
+    <defName>TotalWagesOwed</defName>
+    <label>Total Wages Owed</label>
+    <description>The total amount of siver I am owed for being here.</description>
+    <type>Int</type>
+  </RecordDef>
+  <RecordDef>
+    <defName>TotalWagesCollected</defName>
+    <label>Total Wages Collected</label>
+    <description>The total amount of siver I have already collected.</description>
+    <type>Int</type>
+  </RecordDef>
+</Defs>

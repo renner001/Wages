@@ -77,6 +77,8 @@ namespace DanielRenner.Wages
             var allPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists_NoSlaves.ToList();
             moodStepCache = new Dictionary<Pawn, KeyValuePair<int, int>[]>();
 
+            var expectations = ExpectationsUtility.CurrentExpectationFor(p);
+
 
             // in case of fixed income, we calculate one step list for all pawns based on the settings set zero point:
             if (ModSettings_Wages.fixedIncome)
@@ -110,7 +112,7 @@ namespace DanielRenner.Wages
                         {
                             summarySkills += skill.Level;
                         });
-                        var factorAverageSkills = summarySkills / (numSkills * 20.0f); // some mods change the limits beyond 20... let's tomorrow thing about that
+                        var factorAverageSkills = summarySkills / (numSkills * 20.0f); // some mods change the limits beyond 20... let's tomorrow think about that
                         factor = 0.3f * factorAverageSkills + 0.3f * factorSecondHighestSkill + 0.4f * factorHighestSkill;
                     }
                     else
