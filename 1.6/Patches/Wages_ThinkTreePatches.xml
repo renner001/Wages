@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThinkTreeDef[defName="MentalStateCritical"]/thinkRoot/subNodes</xpath>
+    <value>
+      <li Class="ThinkNode_ConditionalMentalState">
+        <state>Wages_WageTheft</state>
+        <subNodes>
+          <li Class="DanielRenner.Wages.JobGiver_WageTheft" />
+        </subNodes>
+      </li>
+    </value>
+  </Operation>
+</Patch>

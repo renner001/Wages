@@ -2,4 +2,49 @@
 <LanguageData>
   <Wages.SettingsPanel>Wages</Wages.SettingsPanel>
   <Wages.SettingsPanelChangeSettingsEffect>All settings will take effect after a few in-game minutes. A restart is not necessary.</Wages.SettingsPanelChangeSettingsEffect>
+  <Wages.PawnExempt>Exempt from wages</Wages.PawnExempt>
+  <Wages.TooltipWagesReceived>The wage that received every five days for </Wages.TooltipWagesReceived>
+  <Wages.WageSliderLabel>Wages (paid every five days in silver)</Wages.WageSliderLabel>
+  <Wages.ToolTipExempt>Check to make this pawn a owner. They will not demand wages. Hint: Disabled if this feature is only allowed in dev mode based on mod settings.</Wages.ToolTipExempt>
+  <Wages.Exempt>Exempt</Wages.Exempt>
+  <Wages.Silver>silver</Wages.Silver>
+  <Wages.Pawn>Pawn</Wages.Pawn>
+  <Wages.MainWindow_TotalWageLabel>Total Wages (Per 5-Day Cycle):</Wages.MainWindow_TotalWageLabel>
+  <Wages.MainWindow_TotalWageTooltip>The projected cost if all non-exempt pawns if paid the wage selected below.</Wages.MainWindow_TotalWageTooltip>
+  <Wages.MainWindow_Treasury>Current Treasury:</Wages.MainWindow_Treasury>
+  <Wages.MainWindow_TreasuryTooltip>Total available in your stockpiles.</Wages.MainWindow_TreasuryTooltip>
+  <Wages.MainWindow_PayDayLabel>Next Payday:</Wages.MainWindow_PayDayLabel>
+  <Wages.MainWindow_PayDayTooltip>When the pawns will next expect to be paid.</Wages.MainWindow_PayDayTooltip>
+  <Wages.MainWindow_CreditLabel>Open Credit:</Wages.MainWindow_CreditLabel>
+  <Wages.MainWindow_CreditTooltip>The amount your employees are already entitled to but have not managed to collect yet.</Wages.MainWindow_CreditTooltip>
+
+  <Wages.Settings_CurrencyToUse>Currency to use:</Wages.Settings_CurrencyToUse>
+  <Wages.Settings_SelectCurrency>Select Currency</Wages.Settings_SelectCurrency>
+  <Wages.Settings_CurrencyTooltip>Select the item used to pay wages. Defaults to Silver.</Wages.Settings_CurrencyTooltip>
+  <Wages.Settings_GlobalExemptions>Global Exemptions:</Wages.Settings_GlobalExemptions>
+  <Wages.Settings_ExemptChildren>Exempt Children</Wages.Settings_ExemptChildren>
+  <Wages.Settings_ExemptChildrenTooltip>If checked, children and babies will not demand wages.</Wages.Settings_ExemptChildrenTooltip>
+  <Wages.Settings_ExemptSlaves>Exempt Slaves</Wages.Settings_ExemptSlaves>
+  <Wages.Settings_ExemptSlavesTooltip>If checked, colony slaves will not demand wages.</Wages.Settings_ExemptSlavesTooltip>
+  <Wages.Settings_ExemptColonists>Exempt Colonists</Wages.Settings_ExemptColonists>
+  <Wages.Settings_ExemptColonistsTooltip>If checked, regular free colonists will not demand wages.</Wages.Settings_ExemptColonistsTooltip>
+  <Wages.Settings_MinWage>Minimum Wage (every 5 days)</Wages.Settings_MinWage>
+  <Wages.Settings_MinWageTooltip>The smallest wage that can be paid to a pawn. This wage will result in the highest mood penalty, if it is below the Zero Mood Point.</Wages.Settings_MinWageTooltip>
+  <Wages.Settings_MaxWage>Maximum Wage (every 5 days)</Wages.Settings_MaxWage>
+  <Wages.Settings_MaxWageTooltip>The highest wage that can be paid to a pawn. This wage will result in the highest mood boost.</Wages.Settings_MaxWageTooltip>
+  <Wages.Settings_OwedBeforeGathering>Pawns start collecting wages at x owed</Wages.Settings_OwedBeforeGathering>
+  <Wages.Settings_OwedBeforeGatheringTooltip>Colonists will not collect wages immediately to avoid running for a single item. Only if they are owed more than this threshold will they start collecting.</Wages.Settings_OwedBeforeGatheringTooltip>
+  <Wages.Settings_OwedBeforeMoodlet>Pawns feel cheated starting at x owed</Wages.Settings_OwedBeforeMoodlet>
+  <Wages.Settings_OwedBeforeMoodletTooltip>If colonists try to collect their wages and can't despite already being owed this amount they will feel cheated, applying a mood penalty until they are paid.</Wages.Settings_OwedBeforeMoodletTooltip>
+  <Wages.Settings_HideExempt>Hide 'Exempt' toggle behind Dev Mode</Wages.Settings_HideExempt>
+  <Wages.Settings_HideExemptTooltip>If checked, the option to exempt pawns from wages in the Wages tab will only be visible when RimWorld's Development Mode is active.</Wages.Settings_HideExemptTooltip>
+  <Wages.Settings_FixedIncome>Fixed income</Wages.Settings_FixedIncome>
+  <Wages.Settings_BreakChance>Hourly chance to snap (Wage Theft)</Wages.Settings_BreakChance>
+  <Wages.Settings_BreakChanceTooltip>The percentage chance, per in-game hour, that an unpaid pawn will suffer a Wage Theft mental break when owed more than the limit. Set to 0 to disable.</Wages.Settings_BreakChanceTooltip>
+  <Wages.Settings_ZeroPointWage>Zero Mood Point (every 5 days)</Wages.Settings_ZeroPointWage>
+  <Wages.Settings_ZeroPointWageTooltip>The wage at which no mood boost or penalty is applied. Paying this wage will cause no mood effect. Going above will increase the mood. Going below will reduce the mood.</Wages.Settings_ZeroPointWageTooltip>
+
+  <Wages.Alert_UnpaidWages_Label>Unpaid Wages</Wages.Alert_UnpaidWages_Label>
+  <Wages.Alert_UnpaidWages_Explanation>The following pawns are owed significantly more wages than they have collected and will begin to suffer severe mood penalties or mental breaks:</Wages.Alert_UnpaidWages_Explanation>
+  <Wages.Alert_UnpaidWages_LineItem>  - {0} ({1} in {2})</Wages.Alert_UnpaidWages_LineItem>
 </LanguageData>

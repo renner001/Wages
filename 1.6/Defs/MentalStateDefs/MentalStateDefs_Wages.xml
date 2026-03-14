@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MentalStateDef ParentName="BaseMentalState">
+    <defName>Wages_WageTheft</defName>
+    <stateClass>MentalState</stateClass>
+    <label>wage theft</label>
+    <category>Malicious</category>
+    <baseInspectLine>Mental state: Destroying company property for unpaid wages.</baseInspectLine>
+    <beginLetterLabel>wage theft</beginLetterLabel>
+    <beginLetter>{0} has had enough of working for free. [PAWN_pronoun] is going to destroy something valuable to settle [PAWN_possessive] unpaid wages.</beginLetter>
+    <recoveryMessage>{0} has finished securing [PAWN_possessive] compensation.</recoveryMessage>
+  </MentalStateDef>
+</Defs>

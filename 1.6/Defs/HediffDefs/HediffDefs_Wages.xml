@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Defs>
+  <HediffDef>
+    <defName>WagesExempt</defName>
+    <label>wage exempt</label>
+    <description>Internal hediff to mark pawns that act as owners and do not demand wages.</description>
+    <hediffClass>DanielRenner.Wages.Hediff_WageExempt</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <tendable>false</tendable> 
+    <makesSickThought>false</makesSickThought>
+  </HediffDef>
+</Defs>

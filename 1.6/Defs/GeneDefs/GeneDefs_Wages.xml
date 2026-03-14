@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>Wages_Exempt</defName>
+    <label>(W)ageless</label>
+    <description>Carriers of this gene are culturally or biologically conditioned to not expect or demand wages for their labor.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <iconPath>WagesMenuIcon</iconPath>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+</Defs>
